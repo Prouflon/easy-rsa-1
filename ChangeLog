@@ -1,8 +1,11 @@
 Easy-RSA 3 ChangeLog
 
 3.0.9 (TBD)
-   * Upgrade OpenSSL from 1.1.0j to 1.1.1g for Windows (#405)
+   * Upgrade OpenSSL from 1.1.0j to 1.1.1m (#405, #407) 
    * Fix --version so it uses EASYRSA_OPENSSL (#416)
+   * Use openssl rand instead of non-POSIX mktemp (#478)
+   * Fix paths with spaces (#443)
+   * Correct OpenSSL version from Homebrew on macOs (#416)
 
 3.0.8 (2020-09-09)
    * Provide --version option (#372)
@@ -79,11 +82,11 @@ Easy-RSA 3 ChangeLog
 
     * 8b42eea Make aes256 default, replacing 3des
         (keros: Github)
-    
+
     * f2f4ac8 Make -utf8 default
         (roubert: Github)
 
-	
+
 3.0.0-rc2 (2014/07/27)
 
     * 1551e5f docs: fix typo
